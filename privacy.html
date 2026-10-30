@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Alpha budget Privacy</title>
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.5;color:#111}h1{font-size:1.4rem}</style>
+<style>
+body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px 32px;line-height:1.5;color:#111;overflow-wrap:break-word}
+h1{font-size:1.4rem}
+h2{font-size:1.1rem;margin-top:1.6em}
+a{color:#1d4ed8}
+nav{margin:0 0 1.25em}
+@media (max-width:640px){body{margin:20px auto}}
+</style>
 </head><body>
+<nav><a href="index.html">Alpha budget</a> · <a href="terms.html">Terms of use</a></nav>
 <h1>Alpha budget privacy policy</h1>
-<p>Effective date: August 23, 2026.</p>
-<p>Alpha budget is a personal budget app. In version 1, <strong>your budget never leaves this device</strong>. Lines, balances, and notes are stored in local storage (or the app’s private files). We do not run ads, analytics, or crash beacons in this version.</p>
-<p><strong>We do not collect</strong> your name, email, bank credentials, or location. There is no account. JSON export is a file you choose to save.</p>
-<p><strong>Later upgrades</strong> (Ask Cal, Imagine themes, CSV import, linked banks, optional sign-in) will use a server and will update this page before they turn on. Those features are padlocked until then.</p>
-<p>To wipe data: clear the app’s storage or uninstall. On the web, clear this site’s local storage.</p>
-<p>Contact: snova24@gmail.com</p>
+<p>Effective date: <strong>October 29, 2026</strong>.</p>
+<h2>The short version</h2>
+<p>Alpha budget is a personal budget app. <strong>Your budget stays on your device.</strong> There is no account, no ads, no analytics, and no crash reporting. We do not run a server that receives your budget, and we never sell your information.</p>
+<p>Three features talk to outside services, and we explain each one below: the microphone button (your device's built-in speech recognition service), bill and receipt scanning (a one-time download from a public code library host), and the app's fonts (loaded from Google Fonts). None of them send your budget to us.</p>
+<h2>Who we are</h2>
+<p>Alpha budget is published by <strong>Davis Interactive</strong>. This policy covers the Alpha budget app on Android, Windows, and iPhone and iPad.</p>
+<h2>What we collect</h2>
+<p><strong>We do not collect your personal information.</strong> Specifically, we do not receive your name, email address, phone number, bank login details, location, contacts, photos, or audio. There is no account.</p>
+<p>What you type into the app is saved on your device only. That includes your income and expense lines, balances, goals, debts, notes, settings, and a profile name and photo if you add them. Alpha budget does not upload any of it.</p>
+<p>The app also keeps simple counts of which features you use, such as how many times you opened a screen. These counts power in-app badges and the usage box in Settings. They stay on your device and are never sent anywhere. You can turn them off or clear them in Settings.</p>
+<h2>Where your budget is stored</h2>
+<p>Your budget is stored in the app's private storage on your device (the web view's local storage). Other apps cannot read it through your device's normal app protections. You can import a budget file from your device with the JSON import option.</p>
+<h2>Permissions the app asks for, and why</h2>
+<ul>
+<li><strong>Internet.</strong> Used only for the two outside downloads described below (fonts, and the scanning tool the first time you scan). The app does not use the internet to send your budget anywhere.</li>
+<li><strong>Microphone.</strong> Used only when you tap the microphone button to speak into a field. See "Voice input" below.</li>
+<li><strong>Vibrate.</strong> Where your device supports it, the app uses small vibrations (haptic feedback) when you tap or finish something. You can turn this off in Settings.</li>
+</ul>
+<p>The app does <strong>not</strong> ask for access to your location, contacts, calendar, phone, SMS, or notifications. When you tap Camera, the app opens your device's own camera app and gets back only the picture you take.</p>
+<h2>Features that use outside services</h2>
+<p><strong>Voice input.</strong> When you tap the microphone button, Alpha budget asks your device's built-in speech recognition service to listen and turn what you say into text. That service may be Google on Android, Apple on iPhone and iPad, or the equivalent service on Windows. Depending on your device and settings, your voice may be sent to that service's servers to be turned into text. Alpha budget does not record, receive, or save any audio. It receives only the text and puts it in the field you were typing in. The speech service handles your voice under its own privacy policy (Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>; Apple: <a href="https://www.apple.com/privacy/">apple.com/privacy</a>; Windows: <a href="https://privacy.microsoft.com/">privacy.microsoft.com</a>). You can skip voice input and type instead.</p>
+<p><strong>Bill and receipt scanning.</strong> When you scan a bill or receipt, the photo is read on your device to pull out the text and amounts. <strong>The photo is not uploaded.</strong> The app does not keep the scan photo after reading it. The first time you scan, the app downloads an open-source text-reading tool (Tesseract.js) and its English language data from jsDelivr (cdn.jsdelivr.net), a public host for code libraries. jsDelivr can see your device's IP address and basic technical details, like any website you visit, and may keep ordinary server logs under its own policies. No budget data or photo goes with that request. The downloaded files may be saved on your device so they do not have to be downloaded every time. Scanning needs an internet connection the first time.</p>
+<p><strong>Fonts.</strong> To display the app's typefaces, the app asks Google Fonts (fonts.googleapis.com and the Google font servers it points to) for font files when it opens and you are online. Google can see your device's IP address and basic technical details, like any website you visit, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. No budget data is sent. If you are offline, the app shows a standard font instead.</p>
+<p><strong>Camera and photo picker.</strong> If you add a profile photo or scan a bill, you choose a picture from your gallery or take one with your device's camera app. Your profile photo is stored with the rest of your budget on your device. Your device's camera app may keep its own copy of a picture according to its own settings.</p>
+<p><strong>Bot connector (optional).</strong> Settings includes a Bot connector that is off by default. If you turn it on, a helper app on your own device that has your private token can read your balances or add one entry. Nothing is sent off your device by this feature.</p>
+<h2>Device backup</h2>
+<p>On Android, Alpha budget allows the standard Android backup. If you have Android backup turned on, Android can back up app data to your Google account and restore it when you set up a new device. If it is on, a copy of your budget may be saved by Android and Google as part of that backup, under your Google account and Google's terms. We cannot see or access those backups. You can turn Android backup off in your device settings.</p>
+<p>Alpha budget does not add its own cloud backup on Android, Windows, or iPhone and iPad. If your device or operating system makes a backup because you turned that on, the platform handles that copy under its own terms. We cannot see or access those backups.</p>
+<h2>Sharing and selling</h2>
+<p>We do not sell your personal information. We do not share it for advertising. We have no personal information on our servers to sell or share, and we use no ad or analytics services. The only outside parties the app contacts are the three described above (your device's speech recognition service, jsDelivr, and Google Fonts), and only for the purposes explained there.</p>
+<h2>Children</h2>
+<p>Alpha budget is a general budgeting app and is not made for children under 13. We do not knowingly collect personal information from anyone, including children. If you are a parent or guardian and believe a child has sent us information, contact us and we will delete it.</p>
+<h2>Deleting your data</h2>
+<p>You are in control of your data because it is on your device:</p>
+<ul>
+<li>In the app, go to Settings and tap <strong>Clear all data</strong> to erase the budget on that device.</li>
+<li>Or clear the app's stored data in your device settings, or uninstall the app.</li>
+<li>If a device backup is on, a restore can bring your budget back. On Android, manage backed-up copies in your Google account settings. On Windows, iPhone, and iPad, manage backup in that platform's settings.</li>
+<li>On the web, clear this site's local storage.</li>
+</ul>
+<p>Because we do not hold your data, there is nothing for us to delete on a server.</p>
+<h2>Security</h2>
+<p>Your budget lives in the app's private storage on your device, protected by your operating system's app protections and your device's screen lock. Alpha budget does not add its own password or encryption on top of that. Downloads of fonts and the scanning tool use secure (HTTPS) connections. No system is perfectly secure, so please keep your device locked and updated.</p>
+<h2>Your privacy rights</h2>
+<p>We do not collect or sell your personal information, so there is usually nothing to access, correct, or delete on our side. Even so, we follow the spirit of laws like the California Consumer Privacy Act: we will tell you what we do with information, we do not sell or share it for advertising, we will not treat you differently for asking about privacy, and you can ask us any privacy question at the address below.</p>
+<p>New York, where Alpha budget is based, does not currently have a general consumer privacy law like California's. We apply the same practices to everyone, wherever you live.</p>
+<h2>Changes to this policy</h2>
+<p>If we change this policy, we will update the effective date at the top. If we ever add features that send your information off your device, we will update this policy before those features turn on, and we will ask for your consent where the law requires it. Features shown as locked in the app today do not send any data.</p>
+<h2>Contact</h2>
+<p>Questions about privacy: <a href="mailto:snova24@gmail.com"><strong>snova24@gmail.com</strong></a></p>
 </body></html>
